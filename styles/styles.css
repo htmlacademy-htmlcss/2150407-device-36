@@ -21,3 +21,132 @@
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+  min-width: 1160px;
+  margin: 0;
+  height: 100%;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* шапка сайта */
+
+.page-header {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.page-navigation {
+  background-color: #FFE17F;
+}
+
+.product-catalog-title {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.page-navigation-list {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.page-submenu-list-close {
+  display: none;
+}
+
+/* основное содержимое index */
+
+/* секция слайдера */
+
+.slider {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.slider-container {
+  display: none;
+}
+.slider-container-current {
+  display: block;
+}
+
+/* секция каталога */
+
+.catalog-categories {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* секция услуг */
+
+.services {
+  background-color: #F0F0F0;
+}
+
+.services-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.services-description-item {
+  display: none;
+}
+
+.services-description-item-current {
+  display: block;
+}
+
+.services-menu-item {
+  display: none;
+}
+
+.services-menu-item-current {
+  display: block;
+}
+
+/* секция заказа доставки */
+
+.booking {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* секция информации */
+
+.information {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* основное содержимое catalog */
+
+/* блок подписки */
+
+/* подвал сайта */
+
+.page-footer {
+  background-color: #444444;
+}
