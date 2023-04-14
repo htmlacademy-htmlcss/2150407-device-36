@@ -870,6 +870,24 @@ body {
   margin-top: 11px;
 }
 
+.filter-products-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.control {
+  padding-left: 36px;
+}
+
+.control-mark-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #CCCCCC;
+  border-radius: 3px;
+}
+
 /* секция товаров каталога */
 
 .content-catalog {
