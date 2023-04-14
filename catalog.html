@@ -18,8 +18,10 @@
         </a>
         <div class="navigation-user-container">
           <form class="page-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="search">Поиск по сайту.</label>
-            <input class="input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
+            <label class="page-search-label" for="search">
+              <input class="input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
+              <span class="visually-hidden">Поиск по сайту.</span>
+            </label>
             <button class="button page-search-form-button" type="submit">Найти</button>
           </form>
           <ul class="page-navigation-list-user clear-list">
@@ -94,18 +96,23 @@
           <section class="filter-products">
             <h2 class="filter-products-title">фильтр:</h2>
             <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-              <div class="range-scale">
-                <div class="range-bar">
-                  <button type="button" class="range-toggle toggle-min">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <button type="button" class="range-toggle toggle-max">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
+              <fieldset class="filter-products-group filter-container">
+                <legend class="filter-title">Стоимость</legend>
+                <div class="range-scale filter-container">
+                  <div class="range-bar">
+                    <button type="button" class="range-toggle toggle-min">
+                      <span class="range-description">от 0</span>
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button type="button" class="range-toggle toggle-max">
+                      <span class="range-description">до 5000</span>
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <fieldset class="filter-products-group">
-                <legend class="filter-products-title">Цвет</legend>
+              </fieldset>
+              <fieldset class="filter-products-group filter-container">
+                <legend class="filter-title">Цвет</legend>
                 <ul class="filter-products-list">
                   <li class="filter-products-item">
                     <label class="control">
@@ -139,8 +146,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter-products-group">
-                <legend class="filter-products-title">Bluetooth</legend>
+              <fieldset class="filter-products-group filter-container">
+                <legend class="filter-title">Bluetooth</legend>
                 <ul class="filter-products-list">
                   <li class="filter-products-item">
                     <label class="control">
@@ -156,7 +163,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button" type="submit">Показать</button>
+              <button class="button button-line filter-products-button" type="submit">Показать</button>
             </form>
           </section>
           <section class="content-catalog">
@@ -169,10 +176,10 @@
                 <option value="cheap">Дешевые</option>
               </select>
               <div class="sorting-button-container">
-                <button type="button" class="button">
+                <button type="button" class="button sorting-button">
                   <span class="visually-hidden">Вверх.</span>
                 </button>
-                <button type="button" class="button">
+                <button type="button" class="button sorting-button">
                   <span class="visually-hidden">Вниз.</span>
                 </button>
               </div>

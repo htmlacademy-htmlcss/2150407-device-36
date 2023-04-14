@@ -192,13 +192,12 @@ body {
 }
 
 .page-navigation-item {
-  min-width: 99px;
   margin-left: 26px;
 }
 
 .page-navigation-item-enter {
   flex-grow: 1;
-  width: 100%;
+  max-width: 150px;
 }
 
 .page-navigation-item-exit {
@@ -211,17 +210,34 @@ body {
 }
 
 .input-search {
-  padding-top: 10px;
-  padding-left: 48px;
-  padding-bottom: 10px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.input-search::placeholder{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-search-label {
+  position: relative;
+  padding-top: 8px;
+  padding-left: 46px;
+  padding-bottom: 8px;
   flex-grow: 1;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   background-color: #FFE17F;
 }
 
-.input-search::placeholder{
-  color: rgba(0, 0, 0, 0.3);
+.page-search-label::before {
+  position: absolute;
+  content: "";
+  top: 35%;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  background-image: url("/images/graphics/search-icon.svg");
 }
 
 .page-search-form-button {
@@ -710,12 +726,28 @@ body {
 
 .inner-header {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 34px;
 }
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   gap: 36px;
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
+  position: absolute;
+  content: "";
+  opacity: 0.2;
+  top: 35%;
+  left: -16px;
+  width: 4px;
+  height: 7px;
+  background-image: url("/images/graphics/breadcrumbs-arrow.svg");
 }
 
 .background-container {
@@ -738,6 +770,106 @@ body {
   width: 320px;
 }
 
+.filter-products-title,
+.sorting-container-title {
+  font-family: 'Raleway';
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 25px;
+}
+
+.filter-products-title {
+  padding-left: 60px;
+  margin-bottom: 60px;
+}
+
+.filter-container {
+  width: 200px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+}
+
+.filter-products-group {
+  position: relative;
+}
+
+.filter-products-group::before {
+  position: absolute;
+  content: "";
+  top: -32px;
+  left: 0;
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.filter-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.filter-products-button {
+  width: 210px;
+  margin-top: 5px;
+  z-index: 1;
+}
+
+.range-scale {
+  position: relative;
+  width: 200px;
+  height: 2px;
+  background-color: #DCDCDC;
+  margin-top: 44px;
+}
+
+.range-bar {
+  position: absolute;
+  width: 119px;
+  height: 2px;
+  left: 10px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #EBEBEB;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-description {
+  position: absolute;
+  display: block;
+  width: max-content;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.3;
+  padding-top: 11px;
+  margin-top: 11px;
+}
+
 /* секция товаров каталога */
 
 .content-catalog {
@@ -756,18 +888,56 @@ body {
 
 .sorting-container {
   display: flex;
+  justify-content: space-between;
   gap: 206px;
+}
+
+.sorting-container-title {
+  padding-left: 40px;
 }
 
 .select-control {
   font-family: 'Rubik';
   font-size: 18px;
   line-height: 30px;
-  width: 141px;
+  min-width: 141px;
   border: none;
   margin: 0;
   padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
   background-color: transparent;
+  background-image: url("/images/graphics/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+
+.sorting-button-container {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.sorting-button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.sorting-button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("/images/graphics/sort-up-buttons.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sorting-button:nth-child(1) {
+  transform: rotate(180deg);
 }
 
 .product-cards {
@@ -807,6 +977,8 @@ body {
 }
 
 .pagination-item {
+  display: flex;
+  align-items: center;
   width: 40px;
   height: 40px;
 }
