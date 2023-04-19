@@ -107,6 +107,22 @@ body {
   padding-left: 22px;
 }
 
+.page-navigation-link:hover {
+  opacity: 0.6;
+}
+
+.page-navigation-link:active {
+  opacity: 0.3;
+}
+
+.page-navigation-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.services-link {
+  padding-left: 5px;
+}
+
 .exit-button {
   padding: 0;
   margin: 0;
@@ -215,6 +231,11 @@ body {
   background-color: transparent;
 }
 
+.input-search:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .input-search::placeholder{
   color: rgba(0, 0, 0, 0.3);
 }
@@ -230,6 +251,10 @@ body {
   background-color: #FFE17F;
 }
 
+.page-search-label:focus {
+  outline: #AF4FFF;
+}
+
 .page-search-label::before {
   position: absolute;
   content: "";
@@ -241,6 +266,7 @@ body {
 }
 
 .page-search-form-button {
+  position: relative;
   padding: 10px 56px;
   margin-left: -2px;
   max-width: 160px;
@@ -253,6 +279,30 @@ body {
   font-weight: 400;
   text-transform: none;
   text-align: center;
+}
+
+.page-search-form-button:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.page-search-form-button:focus {
+  outline: none;
+}
+
+.page-search-form-button:focus::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 4px;
+}
+
+.page-search-form-button:active {
+  color: rgba(250, 250, 250, 0.3);
 }
 
 .page-navigation-list-user {
@@ -283,11 +333,21 @@ body {
   right: 0;
   width: 50px;
   height: 50px;
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid #000000;
+  opacity: 0.3;
   border-radius: 50%;
   background-image: url("/images/graphics/plus-catalog-button.svg");
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.product-catalog-button:hover::before {
+  opacity: 1;
+}
+
+.product-catalog-button:focus-within::before {
+  background-image: url("/images/graphics/minus-catalog-button.svg");
 }
 
 .page-navigation-list {
@@ -299,8 +359,62 @@ body {
   gap: 45px;
 }
 
-.page-submenu-list-close {
+.product-catalog-container {
+  position: relative;
+}
+
+.page-submenu-container {
   display: none;
+  position: absolute;
+  top: 35px;
+  left: -60px;
+  width: 1105px;
+  padding: 33px 0 55px 55px;
+  background-color: #ffe17f;
+  z-index: 2;
+}
+
+.product-catalog-container:focus-within .page-submenu-container {
+  position: absolute;
+  display: flex;
+  gap: 60px;
+}
+
+.submenu-item {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.submenu-link {
+  padding: 5px;
+}
+
+.active {
+  position: relative;
+}
+
+.submenu-active {
+  position: relative;
+}
+
+.active::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+}
+
+.submenu-active::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
 }
 
 /* основное содержимое index */
