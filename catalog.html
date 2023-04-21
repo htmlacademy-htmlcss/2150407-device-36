@@ -13,7 +13,7 @@
     <!--шапка сайта-->
     <header class="page-header">
       <nav class="page-navigation">
-        <a class="link page-navigation-link-logo" href="#">
+        <a class="link page-navigation-link-logo" href="index.html">
           <img class="page-navigation-logo" src="/images/device-logo-header.svg" width="145" height="36" alt="Логотип «Девайс».">
         </a>
         <div class="navigation-user-container">
@@ -35,7 +35,7 @@
             <a class="link page-navigation-link compare-button" href="#">Сравнить</a>
             </li>
             <li class="page-navigation-item">
-            <a class="link page-navigation-link basket-button" href="#">Корзина</a>
+            <a class="link page-navigation-link basket-button" href="#" data-counter="2">Корзина</a>
             </li>
           </ul>
         </div>
@@ -104,21 +104,21 @@
           <section class="filter-products">
             <h2 class="filter-products-title">фильтр:</h2>
             <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+
+
               <fieldset class="filter-products-group filter-container">
                 <legend class="filter-title">Стоимость</legend>
                 <div class="range-scale filter-container">
-                  <div class="range-bar">
-                    <button type="button" class="range-toggle toggle-min">
-                      <span class="range-description">от 0</span>
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button type="button" class="range-toggle toggle-max">
-                      <span class="range-description">до 5000</span>
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
-                  </div>
+                  <button type="button" class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button type="button" class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
                 </div>
               </fieldset>
+
+
               <fieldset class="filter-products-group filter-container">
                 <legend class="filter-title">Цвет</legend>
                 <ul class="filter-products-list clear-list">

@@ -117,7 +117,7 @@ body {
 .page-navigation-link {
   position: relative;
   padding: 5px;
-  padding-left: 22px;
+  padding-left: 20px;
 }
 
 .page-navigation-link:hover {
@@ -153,11 +153,15 @@ body {
   background-repeat: no-repeat;
 }
 
+.basket-button {
+  padding-left: 42px;
+}
+
 .basket-button::before {
   position: absolute;
   content: "";
   top: 15%;
-  left: -3px;
+  left: 13px;
   width: 13px;
   height: 21px;
   background-image: url("/images/graphics/basket-button.svg");
@@ -168,13 +172,13 @@ body {
 .basket-button::after {
   position: absolute;
   display: block;
-  content: "2";
+  content: attr(data-counter);
   text-align: center;
   border-radius: 25px;
   height: 21px;
   width: 21px;
   top: 17%;
-  left: -20px;
+  left: -2px;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -195,12 +199,9 @@ body {
 
 .page-navigation-link-logo {
   margin-left: 60px;
-  margin-bottom: 30px;
-}
-
-.page-navigation-logo {
-  margin-top: -20px;
-  margin-bottom: 30px;
+  transform: translateY(-20px);
+  width: 145px;
+  display: flex;
 }
 
 .page-navigation-link-logo:focus-visible {
@@ -368,7 +369,7 @@ body {
   outline-offset: 4px;
 }
 
-.product-catalog-button:focus-within::before {
+.product-catalog-container:focus-within .product-catalog-button::before {
   background-image: url("/images/graphics/minus-catalog-button.svg");
 }
 
@@ -1055,16 +1056,6 @@ body {
 .range-scale {
   position: relative;
   width: 200px;
-  height: 2px;
-  background-color: #DCDCDC;
-}
-
-.range-bar {
-  position: absolute;
-  width: 119px;
-  height: 2px;
-  left: 10px;
-  background-color: #000000;
 }
 
 .range-toggle {
@@ -1718,13 +1709,22 @@ body {
   opacity: 0;
 }
 
-.button-social-telegram {
+.button-social::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-social-telegram::after {
   background-image: url("/images/telegram.svg");
 }
-.button-social-youtube {
+.button-social-youtube::after {
   background-image: url("/images/youtube.svg");
 }
-.button-social-twitter {
+.button-social-twitter::after {
   background-image: url("/images/twitter.svg");
 }
 
@@ -1742,6 +1742,10 @@ body {
 
 .button-social:active {
   color:#444444;
+}
+
+.button-social:active::after {
+  opacity: 0.6;
 }
 
 .page-footer-link {
