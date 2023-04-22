@@ -109,12 +109,29 @@
               <fieldset class="filter-products-group filter-container">
                 <legend class="filter-title">Стоимость</legend>
                 <div class="range-scale filter-container">
-                  <button type="button" class="range-toggle toggle-min">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <button type="button" class="range-toggle toggle-max">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
+
+
+                  <div class="range-scale-container range-scale-container-from">
+                    <button type="button" class="range-toggle">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <label>
+                      <input class="range-scale-input range-scale-input-from" type="text" name="price-from" placeholder="от 0">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </label>
+                  </div>
+
+                  <div class="range-scale-container range-scale-container-to">
+                    <button type="button" class="range-toggle">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                    <label>
+                      <input class="range-scale-input range-scale-input-to" type="text" name="price-to" placeholder="до 5000">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </label>
+                  </div>
+
+
                 </div>
               </fieldset>
 

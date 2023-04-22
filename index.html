@@ -311,5 +311,59 @@
         </div>
       </div>
     </footer>
+    <!--модальное окно-->
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <div class="modal-content-container">
+          <button class="modal-close-button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 26 26"><g clip-path="url(#a)"><path fill="#000" d="M26 2.36 23.64 0 13 10.64 2.36 0 0 2.36 10.64 13 0 23.64 2.36 26 13 15.36 23.64 26 26 23.64 15.36 13 26 2.36Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h26v26H0z"/></clipPath></defs></svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-form-container">
+              <div class="frame-text-input">
+                <label class="text-input" for="username">Ваше имя:</label>
+                <input class="control-modal-input input-image-username" type="text" id="username" name="username" required placeholder="Введите имя">
+              </div>
+              <div class="frame-text-input">
+                <label class="text-input" for="e-mail">Ваш e-mail:</label>
+                <input class="control-modal-input input-image-e-mail input-error" type="e-mail" id="e-mail" name="e-mail" required placeholder="Введите почту">
+                <span class="input-comment input-comment-error">Забавный у вас адрес</span>
+              </div>
+            </div>
+            <div class="modal-form-container">
+              <div class="frame-text-input">
+                <label class="text-input" for="comment">Что нужно привезти:</label>
+                <input class="control-modal-input control-modal-input-comment" type="text" id="comment" name="comment" placeholder="В свободной форме">
+              </div>
+              <div class="frame-number-input frame-number-input-info">
+                <span class="form-label">
+                  <label class="text-input" for="quantity">Количество:</label>
+                  <span class="tooltip">
+                    <button class="button-tooltip" type="button" aria-labelledby="tooltip-label">i</button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                  </span>
+                </span>
+                <div class="area-input">
+                  <button class="button-plus-minus button-minus" type="button">
+                    <svg width="16" height="3" viewBox="0 0 16 3" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 0.786987H0V2.78699H16V0.786987Z" fill="currentColor"/>
+                      </svg>
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input class="control-modal-input input-number" type="number" id="quantity" name="quantity" placeholder="1">
+                  <button class="button-plus-minus button-plus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g clip-path="url(#a)"><path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button modal-button button-line-modal" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
