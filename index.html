@@ -18,8 +18,8 @@
         </a>
         <div class="navigation-user-container">
           <form class="page-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="page-search-label" for="search">
-              <input class="input-search" type="text" name="search" id="search" placeholder="Поиск по сайту">
+            <label class="page-search-label">
+              <input class="input-search" type="text" name="search" placeholder="Поиск по сайту">
               <span class="visually-hidden">Поиск по сайту.</span>
             </label>
             <button class="button page-search-form-button" type="submit">Найти</button>
@@ -29,7 +29,7 @@
               <a class="link page-navigation-link login-button" href="#">Войти</a>
             </li>
           </ul>
-          <ul class="page-navigation-list-user clear-list">
+          <ul class="page-navigation-list-user page-navigation-list-user-right clear-list">
             <li class="page-navigation-item">
             <a class="link page-navigation-link compare-button" href="#">Сравнить</a>
             </li>
@@ -40,10 +40,12 @@
               <div class="popover-content">
                 <ul class="popover-list clear-list">
                   <li class="popover-item">
-                    <div class="popover-product-image">
-                      <img class="product-image" src="/images/products/amateur-selfie-stick.jpg" width= "39px" height= "43px" alt="Любительская селфи-палка.">
-                    </div>
-                    <p class="popover-product-name">Любительская селфи-палка</p>
+                    <a class="link popover-product-container" href="#">
+                      <div class="popover-product-image">
+                        <img class="product-image" src="/images/products/amateur-selfie-stick.jpg" width= "39px" height= "43px" alt="Любительская селфи-палка.">
+                      </div>
+                      <p class="popover-product-name">Любительская селфи-палка</p>
+                    </a>
                     <button class="button button-product-delete" type="button">
                       <svg class="product-delete-image" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" fill="white"/>
@@ -51,12 +53,14 @@
                     </button>
                   </li>
                   <li class="popover-item">
-                    <div class="popover-product-image">
-                      <img class="product-image" src="/images/products/professional-selfie-stick.jpg" width= "39px" height= "43px" alt="Любительская селфи-палка.">
-                    </div>
-                    <p class="popover-product-name">Профессиональная селфи-палка</p>
+                    <a class="link popover-product-container" href="#">
+                      <div class="popover-product-image">
+                        <img class="product-image" src="/images/products/professional-selfie-stick.jpg" width= "39px" height= "43px" alt="Любительская селфи-палка.">
+                      </div>
+                      <p class="popover-product-name">Профессиональная селфи-палка</p>
+                    </a>
                     <button class="button button-product-delete" type="button">
-                      <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="product-delete-image" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" fill="white"/>
                         </svg>
                     </button>
@@ -104,6 +108,7 @@
           </div>
           <ul class="page-navigation-list clear-list">
             <li class="page-navigation-product-item">
+              <!-- Для того чтобы выделить текущий элемент списка, добавь class="active" для ссылки <a class="link page-navigation-link services-link" href="#"> -->
               <a class="link page-navigation-link services-link" href="#">Доставка</a>
             </li>
             <li class="page-navigation-product-item">
@@ -150,8 +155,12 @@
               <h3 class="slider-description-title">Худеем правильно!</h3>
               <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <button class="button button-detailed button-line" type="button">Подробнее</button>
-              <b>48 часов</b>
-              <span>Без подзарядки</span>
+              <div class="slider-specifications-container">
+                <div class="specifications-container">
+                  <b class="specifications-title">48 часов</b>
+                  <span class="specifications-comment">Без подзарядки</span>
+                </div>
+              </div>
             </div>
           </li>
           <li class="slider-item">
@@ -162,12 +171,20 @@
               <h3 class="slider-description-title">Делай селфи, как Бен Стиллер! </h3>
               <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <button class="button button-detailed button-line" type="button">Подробнее</button>
-              <b>8,5 м</b>
-              <span>Длина палки</span>
-              <b>5 кг</b>
-              <span>Вес палки</span>
-              <b>Карбон</b>
-              <span>Материал</span>
+              <div class="slider-specifications-container">
+                <div class="specifications-container">
+                  <b class="specifications-title">8,5 м</b>
+                  <span class="specifications-comment">Длина палки</span>
+                </div>
+                <div class="specifications-container">
+                  <b class="specifications-title">5 кг</b>
+                  <span class="specifications-comment">Вес палки</span>
+                </div>
+                <div class="specifications-container">
+                  <b class="specifications-title">Карбон</b>
+                  <span class="specifications-comment">Материал</span>
+                </div>
+              </div>
             </div>
           </li>
         </ol>
@@ -198,22 +215,22 @@
       <section class="catalog-categories">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="catalog-categories-list clear-list">
-          <li class="catalog-categories-item">
+          <li class="catalog-categories-item virtual-reality">
             <a class="link catalog-categories-link" href="#">Виртуальная<br>реальность</a>
           </li>
-          <li class="catalog-categories-item">
+          <li class="catalog-categories-item monopods">
             <a class="link catalog-categories-link" href="catalog.html">Моноподы<br>для селфи</a>
           </li>
-          <li class="catalog-categories-item">
+          <li class="catalog-categories-item camera">
             <a class="link catalog-categories-link" href="#">Экшн-камеры</a>
           </li>
-          <li class="catalog-categories-item">
+          <li class="catalog-categories-item bracelets">
             <a class="link catalog-categories-link" href="#">Фитнес-браслеты</a>
           </li>
-          <li class="catalog-categories-item">
-            <a class="link catalog-categories-link" href="#">Умные часы</a>
+          <li class="catalog-categories-item clock">
+            <a class="link catalog-categories-link clock" href="#">Умные часы</a>
           </li>
-          <li class="catalog-categories-item">
+          <li class="catalog-categories-item copters">
             <a class="link catalog-categories-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
@@ -337,7 +354,7 @@
       </div>
       <div class="right-container">
         <div class="contacts-container">
-          <a class="link contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="link contacts-phone" href="tel:+78128121212">Тел.:+7(812)812-12-12</a>
         </div>
         <div class="website-container">
           <a class="link website-link" href="https://htmlacademy.ru/">
@@ -349,6 +366,7 @@
     </footer>
     <!--модальное окно-->
     <div class="modal-container modal-container-close">
+      <!-- Для того что бы модальное окно открылось удали class="modal-container-close" у <div class="modal-container modal-container-close"> -->
       <div class="modal modal-delivery">
         <div class="modal-content-container">
           <button class="modal-close-button" type="button">
@@ -358,14 +376,17 @@
           <h2 class="modal-title">Доставка под заказ</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-form-container">
-              <div class="frame-text-input">
+              <div class="frame-text-input frame-username-input">
                 <label class="text-input" for="username">Ваше имя:</label>
                 <input class="control-modal-input input-image-username" type="text" id="username" name="username" required placeholder="Введите имя">
+                <span class="input-comment">Добавьте имя</span>
               </div>
-              <div class="frame-text-input">
+              <div class="frame-text-input frame-e-mail-input">
                 <label class="text-input" for="e-mail">Ваш e-mail:</label>
-                <input class="control-modal-input input-image-e-mail input-error" type="e-mail" id="e-mail" name="e-mail" required placeholder="Введите почту">
-                <span class="input-comment input-comment-error">Забавный у вас адрес</span>
+                <input class="control-modal-input input-image-e-mail" type="e-mail" id="e-mail" name="e-mail" required placeholder="Введите почту">
+                <!-- Для того что бы input отобразился в состоянии ошибки добавь class="input-error" для input -->
+                <span class="input-comment">Забавный у вас адрес</span>
+                <!-- Для того что бы span(подпись у input) отобразился в состоянии ошибки добавь class="input-comment-error" для span(подпись у input) -->
               </div>
             </div>
             <div class="modal-form-container">
