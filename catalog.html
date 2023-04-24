@@ -31,11 +31,47 @@
             <li class="page-navigation-item page-navigation-item-exit">
             <a class="link page-navigation-link exit-button" href="#">Выйти</a>
             </li>
+          </ul>
+          <ul class="page-navigation-list-user clear-list">
             <li class="page-navigation-item">
             <a class="link page-navigation-link compare-button" href="#">Сравнить</a>
             </li>
-            <li class="page-navigation-item">
+            <li class="page-navigation-item page-navigation-item-basket">
             <a class="link page-navigation-link basket-button" href="#" data-counter="2">Корзина</a>
+            <div class="popover popover-cart">
+              <h2 class="visually-hidden">Корзина товаров</h2>
+              <div class="popover-content">
+                <ul class="popover-list clear-list">
+                  <li class="popover-item">
+                    <div class="popover-product-image">
+                      <img class="product-image" src="/images/products/amateur-selfie-stick.jpg" width= "39px" height= "43px" alt="Любительская селфи-палка.">
+                    </div>
+                    <p class="popover-product-name">Любительская селфи-палка</p>
+                    <button class="button button-product-delete" type="button">
+                      <svg class="product-delete-image" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" fill="white"/>
+                        </svg>
+                    </button>
+                  </li>
+                  <li class="popover-item">
+                    <div class="popover-product-image">
+                      <img class="product-image" src="/images/products/professional-selfie-stick.jpg" width= "39px" height= "43px" alt="Любительская селфи-палка.">
+                    </div>
+                    <p class="popover-product-name">Профессиональная селфи-палка</p>
+                    <button class="button button-product-delete" type="button">
+                      <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" fill="white"/>
+                        </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="popover-result">
+                <p class="result-product">Товаров: 2</p>
+                <p class="result-price">Сумма: 2000 ₽</p>
+              </div>
+              <button class="button popover-open-button" type="button">Открыть корзину</button>
+            </div>
             </li>
           </ul>
         </div>
