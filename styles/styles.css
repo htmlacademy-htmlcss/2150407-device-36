@@ -1644,14 +1644,14 @@ body {
   justify-content: space-between;
   padding-top: 64px;
   margin-left: 5px;
-  margin-bottom: 130px;
+  margin-bottom: 135px;
 }
 
 .subscription-form-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 64px;
+  margin-top: 60px;
   padding-bottom: 56px;
 }
 
@@ -1680,7 +1680,7 @@ body {
   border: none;
   border-bottom: solid 3px #C4C4C4;
   background-color: transparent;
-  width: 557px;
+  width: 540px;
   font-family: 'Rubik';
   font-size: 18px;
   line-height: 30px;
@@ -1710,7 +1710,7 @@ body {
   border: 3px solid #C4C4C4;
   font-size: 18px;
   letter-spacing: 0.2em;
-  padding: 18px 39px;
+  padding: 15px 40px;
 }
 
 .subscription-form-button:hover {
