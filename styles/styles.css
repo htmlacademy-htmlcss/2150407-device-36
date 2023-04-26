@@ -34,7 +34,7 @@ body {
   margin: 0;
   height: 100%;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -101,21 +101,21 @@ body {
   top: 41%;
   bottom: 0%;
   height: 8px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   content: "";
   z-index: -1;
 }
 
 .button-line:hover {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .button-line:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .button-line:active {
-  background: #FFCC33;
+  background: #ffcc33;
 }
 
 /* шапка сайта */
@@ -128,7 +128,7 @@ body {
 }
 
 .page-navigation {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   min-height: 300px;
 }
 
@@ -151,7 +151,7 @@ body {
 }
 
 .page-navigation-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .services-link {
@@ -218,7 +218,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .login-button::before {
@@ -248,7 +248,7 @@ body {
 }
 
 .page-navigation-link-logo:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
 }
 
@@ -295,6 +295,9 @@ body {
 
 .input-search {
   position: relative;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   padding: 0;
   padding-left: 48px;
   width: 359px;
@@ -348,7 +351,7 @@ body {
 }
 
 .page-search-label:focus-within {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -379,7 +382,7 @@ body {
 }
 
 .page-search-form-button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
 }
 
@@ -394,7 +397,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
 }
 
@@ -424,7 +427,7 @@ body {
 }
 
 .product-catalog-title {
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -435,6 +438,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
+  margin-left: -5px;
   padding: 16px 64px 17px 0;
   width: 300px;
   z-index: 3;
@@ -444,7 +448,7 @@ body {
   position: absolute;
   content: "";
   top: 1px;
-  right: -3px;
+  right: 0;
   width: 50px;
   height: 50px;
   border: 2px solid #000000;
@@ -460,7 +464,7 @@ body {
 }
 
 .product-catalog-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
 }
 
@@ -490,25 +494,31 @@ body {
   top: 35px;
   left: -60px;
   width: 1160px;
-  padding: 33px 0 55px 60px;
-  background-color: #FFE17F;
+  padding: 24px 0 45px 60px;
+  background-color: #ffe17f;
+  gap: 55px;
   z-index: 2;
 }
 
 .product-catalog-container:focus-within .page-submenu-container {
   position: absolute;
   display: flex;
-  gap: 60px;
 }
 
 .submenu-item {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  margin-left: -5px;
   max-width: 250px;
 }
 
 .submenu-link {
+  font-size: 16px;
+  line-height: 18px;
   padding: 5px;
+}
+.submenu-link-position {
+  margin-left: 10px;
 }
 
 .active {
@@ -561,7 +571,6 @@ body {
 }
 
 .slider-item{
-  /* display: none; */
   visibility: hidden;
   position: absolute;
 }
@@ -570,12 +579,12 @@ body {
   position: absolute;
   counter-increment: tidbit-counter;
   content: "0" counter(tidbit-counter);
-  top: 85px;
-  right: 55px;
+  top: 83px;
+  right: 50px;
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .slider-item-current {
@@ -591,10 +600,15 @@ body {
 
 .slider-description-title {
   font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   margin-top: 121px;
   margin-bottom: 29px;
+}
+
+.slider-description {
+  color: #444444;
 }
 
 .button-detailed {
@@ -619,7 +633,7 @@ body {
 }
 
 .slider-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: -8px;
 }
 
@@ -689,7 +703,7 @@ body {
   left: -5px;
   width: 18px;
   height: 18px;
-  border: solid 2px #AF4FFF;
+  border: solid 2px #af4fff;
   background-color: transparent;
   opacity: 0;
 }
@@ -748,7 +762,7 @@ body {
   height: 160px;
   top: 0;
   left: 0;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -780,11 +794,11 @@ body {
 }
 
 .catalog-categories-link:hover::before {
-  background-color:#FFC700;
+  background-color:#ffc700;
 }
 
 .catalog-categories-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -797,8 +811,8 @@ body {
 .services {
   position: relative;
   margin-bottom: 67px;
-  background-color: #F0F0F0;
-  background-image: linear-gradient(to top, #F0F0F0, #F0F0F0 74%, #FFFFFF 26%);
+  background-color: #f0f0f0;
+  background-image: linear-gradient(to top, #f0f0f0, #f0f0f0 74%, #ffffff 26%);
   z-index: 1;
 }
 
@@ -828,7 +842,7 @@ body {
 
 .button-services-current {
   width: 280px;
-  color: #FFE17F;
+  color: #ffe17f;
   background-color: #000000;
   padding: 9px 120px 11px 0;
 }
@@ -836,12 +850,12 @@ body {
 .button-services-current:hover,
 .button-services-current:active {
   padding-left: 60px;
-  color: #FFE17F;
+  color: #ffe17f;
   background-color: #000000;
 }
 
 .button-services-current:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -902,6 +916,7 @@ body {
 
 .services-description-title {
   font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   margin: 0 0 34px;
@@ -932,7 +947,7 @@ body {
   max-width: 1160px;
   text-align: center;
   padding: 42px 125px 38px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   letter-spacing: 0.2em;
 }
 
@@ -943,7 +958,7 @@ body {
   top: 0;
   width: 125px;
   height: 100%;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   background-image: url("/images/delivery-button.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -972,7 +987,7 @@ body {
 }
 
 .booking-button:hover::before {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .booking-button:hover::after {
@@ -980,7 +995,7 @@ body {
 }
 
 .booking-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -1029,7 +1044,7 @@ body {
 }
 
 .information-phone:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -1056,6 +1071,7 @@ body {
 }
 
 .about-us {
+  max-width: 462px;
   padding-top: 47px;
   position: relative;
 }
@@ -1078,11 +1094,12 @@ body {
   top: 25%;
   width: 8px;
   height: 8px;
-  background-color: #FFC700;
+  background-color: #ffc700;
   border-radius: 50%;
 }
 
 .contacts {
+  max-width: 515px;
   padding-top: 47px;
   position: relative;
 }
@@ -1146,7 +1163,7 @@ body {
 }
 
 .breadcrumbs-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
 }
 
@@ -1155,7 +1172,7 @@ body {
 }
 
 .background-container {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   margin-top: 40px;
 }
 
@@ -1265,7 +1282,7 @@ body {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   z-index: -1;
 }
 
@@ -1303,7 +1320,7 @@ body {
   position: relative;
   width: 18px;
   height: 18px;
-  background: #EBEBEB;
+  background: #ebebeb;
   border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
@@ -1316,7 +1333,7 @@ body {
   left: -5px;
   width: 24px;
   height: 24px;
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
   opacity: 0;
 }
 
@@ -1337,6 +1354,9 @@ body {
 }
 
 .range-scale-input {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -1347,7 +1367,7 @@ body {
 }
 
 .range-scale-input:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -1388,7 +1408,7 @@ body {
 
 .control-input[type="checkbox"]:focus-visible + .control-mark-checkbox,
 .control-input[type="radio"]:focus-visible + .control-mark-radio {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -1413,7 +1433,7 @@ body {
   top: 2px;
   width: 20px;
   height: 20px;
-  border: 2px solid #CCCCCC;
+  border: 2px solid #cccccc;
   border-radius: 3px;
 }
 
@@ -1442,7 +1462,7 @@ body {
   left: 2px;
   width: 20px;
   height: 20px;
-  border: 2px solid #CCCCCC;
+  border: 2px solid #cccccc;
   border-radius: 50%;
 }
 
@@ -1464,7 +1484,7 @@ body {
 }
 
 .background-cards-container {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-left: 5px;
   padding: 70px 40px 78px;
 }
@@ -1508,7 +1528,7 @@ body {
 }
 
 .select-control:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
 }
 
@@ -1519,7 +1539,7 @@ body {
 .sorting-button-container {
   display: flex;
   align-items: center;
-  margin-right: 35px;
+  margin-right: 30px;
 }
 
 .sorting-button {
@@ -1554,7 +1574,7 @@ body {
 }
 
 .sorting-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .sorting-button:active {
@@ -1598,7 +1618,7 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   z-index: 3;
   opacity: 0;
 }
@@ -1624,8 +1644,10 @@ body {
 }
 
 .product-card-price {
+  line-height: 21px;
   margin: 30px 0 0;
   padding: 0;
+  color: #444444;
 }
 
 .new {
@@ -1666,12 +1688,12 @@ body {
 }
 
 .product-card-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
 }
 
 .product-card-link:active .product-card-image-container::before {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .product-card-link:active .product-content-container  {
@@ -1688,7 +1710,7 @@ body {
   justify-content: space-between;
   margin-top: 44px;
   width: 760px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .pagination {
@@ -1723,7 +1745,7 @@ body {
 }
 
 .pagination-button:hover:not(.pagination-link-current) {
- background-color: #DCDCDC;
+ background-color: #dcdcdc;
 }
 
 .pagination-button:focus {
@@ -1731,7 +1753,7 @@ body {
 }
 
 .pagination-button:focus-visible:not(.pagination-link-current) {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -1771,7 +1793,7 @@ body {
 }
 
 .pagination-link-item:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .pagination-link-item-current:focus {
@@ -1790,7 +1812,7 @@ body {
   width: 760px;
   margin-top: 44px;
   padding: 15px 0;
-  border: 3px solid #E5E5E5;
+  border: 3px solid #e5e5e5;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
@@ -1801,7 +1823,7 @@ body {
 }
 
 .loading-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -1871,7 +1893,7 @@ body {
 
 .input-field {
   border: none;
-  border-bottom: solid 3px #C4C4C4;
+  border-bottom: solid 3px #c4c4c4;
   background-color: transparent;
   width: 557px;
   font-family: "Rubik", sans-serif;
@@ -1886,7 +1908,7 @@ body {
 
 .input-field:focus {
   outline: none;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 
 .input-field::-webkit-input-placeholder {
@@ -1910,30 +1932,30 @@ body {
 }
 
 .input-error {
-  outline: 2px solid #FF3D3D;
+  outline: 2px solid #ff3d3d;
 }
 
 .input-field-error {
-  border-bottom: solid 3px #FF3D3D;
+  border-bottom: solid 3px #ff3d3d;
   outline: none;
 }
 
 .subscription-form-button {
   width: 253px;
-  border: 3px solid #C4C4C4;
+  border: 3px solid #c4c4c4;
   font-size: 18px;
   letter-spacing: 0.2em;
   padding: 15px 30px;
 }
 
 .subscription-form-button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
   border-color: #000000;
 }
 
 .subscription-form-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -1948,13 +1970,17 @@ body {
 .page-footer {
   flex: 0 0 auto;
   background-color: #444444;
+}
+
+.page-footer-container {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1160px;
 }
 
 .left-container {
   position: relative;
-  margin-left: 60px;
   width: 239px;
 }
 
@@ -1965,7 +1991,7 @@ body {
   bottom: 85px;
   width: 80px;
   height: 7px;
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .center-container {
@@ -1973,14 +1999,13 @@ body {
 }
 
 .right-container {
-  margin-right: 60px;
   width: 180px;
 }
 
 .page-footer-information {
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 25px 0 50px 0;
 }
 
@@ -1988,7 +2013,7 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 444px;
   display: flex;
   flex-wrap: wrap;
@@ -2023,7 +2048,7 @@ body {
   left: -3px;
   width: 46px;
   height: 46px;
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
   opacity: 0;
 }
 
@@ -2049,7 +2074,7 @@ body {
 }
 
 .button-social:hover {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .button-social:focus {
@@ -2075,19 +2100,19 @@ body {
 }
 
 .page-footer-link:hover {
-  color: #FFC700;
-  border-bottom: 2px solid#FFC700;
+  color: #ffc700;
+  border-bottom: 2px solid#ffc700;
 }
 
 .page-footer-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
   padding: 0;
 }
 
 .page-footer-link:active {
-  color: #FFC700;
-  border-bottom: 2px solid#FFC700;
+  color: #ffc700;
+  border-bottom: 2px solid#ffc700;
   opacity: 0.3;
 }
 
@@ -2097,7 +2122,7 @@ body {
 
 .page-footer-link-logo:focus-visible,
 .contacts-phone:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
 }
 
@@ -2111,15 +2136,15 @@ body {
 }
 
 .contacts-phone {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
 .contacts-phone:hover {
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .contacts-container {
@@ -2131,15 +2156,15 @@ body {
 }
 
 .website-link {
-  color:#FFC700;
+  color:#ffc700;
 }
 
 .website-link:hover {
-  color:#FFFFFF;
+  color:#ffffff;
 }
 
 .website-link:focus-visible {
-  outline: 1px solid #AF4FFF;
+  outline: 1px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -2159,7 +2184,7 @@ body {
   padding: 20px;
   width: 320px;
   min-height: 150px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #000000;
 }
 
@@ -2257,7 +2282,7 @@ body {
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 220px;
 }
 
@@ -2266,7 +2291,7 @@ body {
 }
 
 .popover-product-container:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -2285,7 +2310,7 @@ body {
 }
 
 .button-product-delete:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -2297,7 +2322,7 @@ body {
   margin-top: 12px;
   display: flex;
   justify-content: space-between;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   position: relative;
   z-index: 1;
 }
@@ -2316,7 +2341,7 @@ body {
   left: -20px;
   width: calc(100% + 40px);
   height: 100%;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   z-index: -1;
 }
 
@@ -2324,20 +2349,21 @@ body {
   width: 100%;
   margin-top: 20px;
   padding: 14px 20px;
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .popover-open-button:hover {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .popover-open-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -2408,7 +2434,7 @@ body {
 }
 
 .modal-close-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: -10px;
 }
 
@@ -2420,6 +2446,7 @@ body {
   margin: 10px 0 45px;
   padding: 0;
   font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   max-width: 700px;
@@ -2463,7 +2490,7 @@ body {
   color: #000000;
   border: none;
   border-radius: 25px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   cursor: pointer;
   padding: 0;
   margin: 0;
@@ -2537,7 +2564,7 @@ body {
   position: relative;
   z-index: 1;
   height: 60px;
-  background: #F0F0F0;
+  background: #f0f0f0;
   border: none;
   margin: 0;
   padding: 0;
@@ -2553,11 +2580,11 @@ body {
 }
 
 .control-modal-input:hover {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 
 .control-modal-input:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .control-modal-input:focus:not(:-moz-placeholder-shown) {
@@ -2656,7 +2683,7 @@ body {
   justify-content: center;
   width: 60px;
   height: 60px;
-  background: #F0F0F0;
+  background: #f0f0f0;
   border: none;
   margin: 0;
   padding: 0;
@@ -2665,18 +2692,18 @@ body {
 }
 
 .button-plus-minus:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   color: #888888;
   fill:#888888;
 }
 
 .button-plus-minus:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   z-index: 2;
 }
 
 .button-plus-minus:active {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   color: rgba(0, 0, 0, 0.3);
   fill:rgba(0, 0, 0, 0.3);
 }
@@ -2699,22 +2726,22 @@ body {
   top: 41%;
   bottom: 0%;
   height: 8px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   content: "";
   z-index: -1;
 }
 
 .button-line-modal:hover {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .button-line-modal:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .button-line-modal:active,
 .button-line-modal:active::before {
-  background: #FFCC33;
+  background: #ffcc33;
 }
 
 .button-line-modal:disabled {
