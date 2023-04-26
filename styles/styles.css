@@ -1066,6 +1066,7 @@ body {
 }
 
 .about-us {
+  max-width: 462px;
   padding-top: 47px;
   position: relative;
 }
@@ -1093,6 +1094,7 @@ body {
 }
 
 .contacts {
+  max-width: 515px;
   padding-top: 47px;
   position: relative;
 }
