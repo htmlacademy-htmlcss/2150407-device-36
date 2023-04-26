@@ -438,6 +438,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
+  margin-left: -5px;
   padding: 16px 64px 17px 0;
   width: 300px;
   z-index: 3;
@@ -447,7 +448,7 @@ body {
   position: absolute;
   content: "";
   top: 1px;
-  right: -3px;
+  right: 0;
   width: 50px;
   height: 50px;
   border: 2px solid #000000;
@@ -493,20 +494,21 @@ body {
   top: 35px;
   left: -60px;
   width: 1160px;
-  padding: 33px 0 55px 60px;
+  padding: 24px 0 45px 60px;
   background-color: #ffe17f;
+  gap: 55px;
   z-index: 2;
 }
 
 .product-catalog-container:focus-within .page-submenu-container {
   position: absolute;
   display: flex;
-  gap: 60px;
 }
 
 .submenu-item {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  margin-left: -5px;
   max-width: 250px;
 }
 
@@ -514,6 +516,9 @@ body {
   font-size: 16px;
   line-height: 18px;
   padding: 5px;
+}
+.submenu-link-position {
+  margin-left: 10px;
 }
 
 .active {
@@ -574,8 +579,8 @@ body {
   position: absolute;
   counter-increment: tidbit-counter;
   content: "0" counter(tidbit-counter);
-  top: 85px;
-  right: 55px;
+  top: 83px;
+  right: 50px;
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
@@ -1534,7 +1539,7 @@ body {
 .sorting-button-container {
   display: flex;
   align-items: center;
-  margin-right: 35px;
+  margin-right: 30px;
 }
 
 .sorting-button {
@@ -1965,13 +1970,17 @@ body {
 .page-footer {
   flex: 0 0 auto;
   background-color: #444444;
+}
+
+.page-footer-container {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1160px;
 }
 
 .left-container {
   position: relative;
-  margin-left: 60px;
   width: 239px;
 }
 
@@ -1990,7 +1999,6 @@ body {
 }
 
 .right-container {
-  margin-right: 60px;
   width: 180px;
 }
 
