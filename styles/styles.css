@@ -295,6 +295,9 @@ body {
 
 .input-search {
   position: relative;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   padding: 0;
   padding-left: 48px;
   width: 359px;
@@ -508,6 +511,8 @@ body {
 }
 
 .submenu-link {
+  font-size: 16px;
+  line-height: 18px;
   padding: 5px;
 }
 
@@ -561,7 +566,6 @@ body {
 }
 
 .slider-item{
-  /* display: none; */
   visibility: hidden;
   position: absolute;
 }
@@ -591,10 +595,15 @@ body {
 
 .slider-description-title {
   font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   margin-top: 121px;
   margin-bottom: 29px;
+}
+
+.slider-description {
+  color: #444444;
 }
 
 .button-detailed {
@@ -902,6 +911,7 @@ body {
 
 .services-description-title {
   font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   margin: 0 0 34px;
@@ -1337,6 +1347,9 @@ body {
 }
 
 .range-scale-input {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -1624,8 +1637,10 @@ body {
 }
 
 .product-card-price {
+  line-height: 21px;
   margin: 30px 0 0;
   padding: 0;
+  color: #444444;
 }
 
 .new {
@@ -2111,7 +2126,7 @@ body {
 }
 
 .contacts-phone {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   -webkit-text-decoration-line: underline;
@@ -2324,6 +2339,7 @@ body {
   width: 100%;
   margin-top: 20px;
   padding: 14px 20px;
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -2420,6 +2436,7 @@ body {
   margin: 10px 0 45px;
   padding: 0;
   font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   max-width: 700px;
